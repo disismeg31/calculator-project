@@ -1,0 +1,24 @@
+.btn{
+    width: 100%;
+    /* pad: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:10px
+}
+
+span{
+    margin: 10px;
+    width: calc(25% - 5px);
+    height:50px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #72A6CA;
+    color: black;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+ 
+ 

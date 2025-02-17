@@ -1,0 +1,27 @@
+.display-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: black;
+}
+.entered-val{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 10px;
+    width:100%;
+    font-size: 25px;
+    background-color: black;
+    border-style: none;
+    color: gray;
+    margin: 10px 0px;
+}
+
+.display-result{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 50px;
+    color: rgb(58, 235, 176);
+}
