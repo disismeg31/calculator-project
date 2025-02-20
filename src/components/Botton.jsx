@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { valContext } from '../context/ValueProvider';
 import './Button.css'
 function Botton() {
-    const {numbers,operations,handleNumClick,handleOpClick,handleCalculation,handleReset,handleShowPrevVal} = useContext(valContext)
+    const {numbers,operations,handleNumClick,handleOpClick,handleCalculation,handleReset,handleShowPrevVal,handleDelete} = useContext(valContext)
     // const numbers = [0,1,2,3,4,5,6,7,8,9];
     // const operations = ['+','-','/','*'];
     // let expression = ``;
@@ -25,6 +25,7 @@ function Botton() {
     <div className='btn'>
         <span onClick={handleReset}>C</span>
         <span onClick={handleShowPrevVal}>Prev</span>
+        <span onClick={handleDelete} >DEL</span>
         {
               numbers.map((num,i)=>(
                     <span className='num' onClick={()=>handleNumClick(num)} key={i}>{num}</span>

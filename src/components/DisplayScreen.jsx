@@ -1,11 +1,10 @@
-import { useState,useContext } from 'react';
+import {useContext } from 'react';
 import {useSelector} from 'react-redux';
 import './DisplayScreen.css';
 import { valContext } from '../context/ValueProvider';
 
 function DisplayScreen() {
-    const {expression,res,prevVal,hidden,lastEntered} = useContext(valContext)
-    // const [dispalay,setDisplay] = useState(0)
+    const {expression,res,hidden,lastEntered} = useContext(valContext)
     const  defaultVal = useSelector(state=>state.val.prev)
      
   return (
@@ -17,7 +16,6 @@ function DisplayScreen() {
             // hidden? <span className='entered-val'>{prevVal}</span> :
             <span className='entered-val'>{defaultVal}</span>
         }
-        {/* <span className='entered-val'>{dispalay}</span> */}
         <div className='display-result'>
             {
                 defaultVal=== null ? '0':res

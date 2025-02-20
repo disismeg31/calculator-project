@@ -9,7 +9,7 @@ function ValueProvider({children}) {
     const numbers = [0,1,2,3,4,5,6,7,8,9];
     const operations = ['+','-','/','*'];
     const [hidden,setHidden]=useState(false)
-    const [expression,setExpression] = useState(``);
+    const [expression,setExpression] = useState("");
     const [res,setRes]=useState(0);
     const  dispatch = useDispatch();
     const prevVal = useSelector(state => state.val.prev);
@@ -34,12 +34,17 @@ function ValueProvider({children}) {
         setExpression(``);
         setRes("");
         setLastEntered(prevVal);
+        setHidden(false);
         dispatch(resetVal(null))
     }
 
     const handleShowPrevVal = () =>{
         setHidden(true)
         console.log(prevVal)
+    }
+
+    const handleDelete=() =>{
+        setExpression((e) => e.slice(0, -1));
     }
 
      const value = {
@@ -54,7 +59,8 @@ function ValueProvider({children}) {
         handleReset,
         hidden,
         handleShowPrevVal,
-        lastEntered
+        lastEntered,
+        handleDelete
         // defaultVal
      }
   return (
