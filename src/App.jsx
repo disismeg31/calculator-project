@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import calculatorStore from "./store/index.js";
 import ValueProvider from "./context/ValueProvider.jsx";
 import ThemeProvider from "./context/ThemeProvider.jsx";
+import Header from "./components/Header.jsx";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Provider store={calculatorStore}>
         <ThemeProvider>
           <ValueProvider>
-            <div className="w-[400px] h-auto bg-[#DC143C]">
+            <div className="w-[400px] h-auto">
+              <Header/>
               <DisplayScreen />
               <Button />
             </div>

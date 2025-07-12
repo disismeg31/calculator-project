@@ -1,14 +1,4 @@
-.btn{
-    width: 100%;
-    /* pad: 10px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:10px
-}
-
-span{
+ .span{
     margin: 10px;
     width: calc(25% - 5px);
     height:50px;

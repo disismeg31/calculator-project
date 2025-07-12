@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useContext } from 'react';
 import { valContext } from '../context/ValueProvider';
-import './Button.css'
+import './Button.style.css'
 function Botton() {
     const {numbers,operations,handleNumClick,handleOpClick,handleCalculation,handleReset,handleShowPrevVal,handleDelete} = useContext(valContext)
     // const numbers = [0,1,2,3,4,5,6,7,8,9];
@@ -22,21 +22,21 @@ function Botton() {
 
 
   return (
-    <div className='btn'>
-        <span onClick={handleReset}>C</span>
-        <span onClick={handleShowPrevVal}>Prev</span>
-        <span onClick={handleDelete} >DEL</span>
+    <div className='btn w-full gap-2.5 flex flex-wrap justify-center items-center bg-[#232c43]'>
+        <span className='span' onClick={handleReset}>C</span>
+        <span className='span' onClick={handleShowPrevVal}>Prev</span>
+        <span className='span' onClick={handleDelete} >DEL</span>
         {
               numbers.map((num,i)=>(
-                    <span className='num' onClick={()=>handleNumClick(num)} key={i}>{num}</span>
+                    <span className='num span' onClick={()=>handleNumClick(num)} key={i}>{num}</span>
                 ))
         }
         {
             operations.map((operator,i)=>(
-                <span className='operator' onClick={()=>handleOpClick(operator)} key={i}>{operator}</span>
+                <span className='operator span' onClick={()=>handleOpClick(operator)} key={i}>{operator}</span>
             ))
         }
-        <span onClick={handleCalculation}>=</span>
+        <span className='span' onClick={handleCalculation}>=</span>
          
     </div>
   )
