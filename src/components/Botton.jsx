@@ -22,15 +22,16 @@ function Botton() {
 
 
   return (
-    <div className='btn w-full gap-2.5 flex flex-wrap justify-center items-center bg-[#232c43]'>
-        <span className='span' onClick={handleReset}>C</span>
-        <span className='span' onClick={handleShowPrevVal}>Prev</span>
-        <span className='span' onClick={handleDelete} >DEL</span>
-        {
+    <div className='btn w-full py-3 rounded-xl gap-2.5 flex flex-wrap justify-center items-center bg-[#232c43]'>
+      {
               numbers.map((num,i)=>(
                     <span className='num span' onClick={()=>handleNumClick(num)} key={i}>{num}</span>
                 ))
         }
+        <span className='span' onClick={handleReset}>C</span>
+        <span className='span' onClick={handleShowPrevVal}>Prev</span>
+        <span className='span' onClick={handleDelete} >DEL</span>
+        
         {
             operations.map((operator,i)=>(
                 <span className='operator span' onClick={()=>handleOpClick(operator)} key={i}>{operator}</span>

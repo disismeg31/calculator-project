@@ -1,10 +1,11 @@
-.display-container{
+/* .display-container{
     display: flex;
     flex-direction: column;
     padding: 10px;
     background-color: black;
-}
-.entered-val{
+} */
+ 
+/* .entered-val{
     display: flex;
     align-items: center;
     margin: 0;
@@ -16,12 +17,12 @@
     border-style: none;
     color: gray;
     margin: 10px 0px;
-}
+} */
 
-.display-result{
+/* .display-result{
     display: flex;
     align-items: center;
     height: 50px;
     font-size: 50px;
-    color: rgb(58, 235, 176);
-}
+    color: #3aebb0;
+} */
