@@ -22,31 +22,31 @@ function Header() {
                 <span className="font-semibold text-xs">THEME</span>
               </div>
               <div className="flex flex-col">
-                <div className="flex justify-between text-xs mb-0.5 px-1">
+                <div className="flex justify-between text-xs mb-0.5 px-2">
                   <p>1</p>
                   <p>2</p>
                   <p>3</p>
                 </div>
-                <div className="bg-[#232c43] w-14 h-[20px] p-1 rounded-2xl flex items-center">
+                <div className="bg-[#232c43] w-16 h-[25px] p-1 rounded-2xl flex items-center">
                   <div className="flex w-full">
                     <button
                       name="theme1"
                       onClick={handleToggleClick}
-                      className="bg-[#d03f2f] w-3 p-1 h-3 rounded-full cursor-pointer"
+                      className="bg-[#d03f2f] w-3 p-2 h-3 rounded-full cursor-pointer"
                     ></button>
                   </div>
                   <div className="flex justify-center w-full">
                     <button
                       name="theme2"
                       onClick={handleToggleClick}
-                      className="bg-[#d03f2f] w-3 p-1 h-3 rounded-full cursor-pointer"
+                      className="bg-[#d03f2f] w-3 p-2 h-3 rounded-full cursor-pointer"
                     ></button>
                   </div>
                   <div className="flex justify-end w-full">
                     <button
                       name="theme3"
                       onClick={handleToggleClick}
-                      className="bg-[#d03f2f] w-3 p-1 h-3 rounded-full cursor-pointer"
+                      className="bg-[#d03f2f] w-3 p-2 h-3 rounded-full cursor-pointer"
                     ></button>
                   </div>
                   {/* on click on specific div(button inside) apply the corresponding div button

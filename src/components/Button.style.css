@@ -1,14 +1,53 @@
- .span{
+ .span-num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 10px;
-    width: calc(25% - 5px);
-    height:50px;
-    padding: 5px;
+    height:70px;
+    padding-top: 5px;
     border-radius: 5px;
-    background-color: #72A6CA;
-    color: black;
-    font-size: 30px;
+    background-color: #e6e6e6;
+    color: #444b5a;
+    font-weight:700;
+    font-size: 40px;
     cursor: pointer;
+    place-content: center;
+    box-shadow:   #b4a597 0px 5px;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
 }
 
+.span-req{
+    margin: 10px;
+    height:70px;
+    padding-top: 5px;
+    border-radius: 5px;
+    background-color: #637097;
+    color: #ffffff;
+    font-weight:700;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow:   #404e72 0px 5px;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+}
+
+.span-res{
+    margin: 10px;
+    height:70px;
+    padding-top: 5px;
+    border-radius: 5px;
+    background-color: 	#d03f2f;
+    color: #ffffff;
+    font-weight:700;
+    font-size: 25px;
+    cursor: pointer;
+    box-shadow:   #93261a 0px 5px;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+}
  
  
