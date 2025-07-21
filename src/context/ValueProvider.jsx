@@ -45,6 +45,10 @@ function ValueProvider({children}) {
 
     const handleDelete=() =>{
         setExpression((e) => e.slice(0, -1));
+        setRes("");
+        setLastEntered(prevVal);
+        setHidden(false);
+        dispatch(resetVal(null))
     }
 
      const value = {

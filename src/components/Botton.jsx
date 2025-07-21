@@ -24,22 +24,22 @@ function Botton() {
   return (
     <div className='btn w-full p-3 rounded-xl gap-2.5 bg-[#232c43]'>
         <div className='grid grid-cols-4'>
-        <span className='span-num' onClick={()=>handleNumClick()}>7</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>8</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>9</span>
-        <span className='span-req' onClick={{handleDelete}}>DEL</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>4</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>5</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>6</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>+</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>1</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>2</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>3</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>-</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>.</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>0</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>/</span>
-        <span className='span-num' onClick={()=>handleNumClick()}>x</span>
+        <span className='span-num' onClick={()=>handleNumClick(7)}>7</span>
+        <span className='span-num' onClick={()=>handleNumClick(8)}>8</span>
+        <span className='span-num' onClick={()=>handleNumClick(9)}>9</span>
+        <span className='span-req' onClick={handleDelete}>DEL</span>
+        <span className='span-num' onClick={()=>handleNumClick(4)}>4</span>
+        <span className='span-num' onClick={()=>handleNumClick(5)}>5</span>
+        <span className='span-num' onClick={()=>handleNumClick(6)}>6</span>
+        <span className='span-num' onClick={()=>handleNumClick(`+`)}>+</span>
+        <span className='span-num' onClick={()=>handleNumClick(1)}>1</span>
+        <span className='span-num' onClick={()=>handleNumClick(2)}>2</span>
+        <span className='span-num' onClick={()=>handleNumClick(3)}>3</span>
+        <span className='span-num' onClick={()=>handleNumClick(`-`)}>-</span>
+        <span className='span-num' onClick={()=>handleNumClick(`.`)}>.</span>
+        <span className='span-num' onClick={()=>handleNumClick(0)}>0</span>
+        <span className='span-num' onClick={()=>handleNumClick(`/`)}>/</span>
+        <span className='span-num' onClick={()=>handleNumClick(`*`)}>x</span>
 
         </div>
         

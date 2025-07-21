@@ -16,7 +16,7 @@ function DisplayScreen() {
             // hidden? <span className='entered-val'>{prevVal}</span> :
             <span className='flex items-center h-[10px] !my-2.5 w-full text-[25px] border-none text-[gray]  entered-val'>{defaultVal}</span>
         }
-        <div className=' flex items-center justify-end h-[50px] text-[50px] text-[#ffffff] display-result'>
+        <div className=' flex items-center justify-end h-[50px] text-[50px] font-semibold text-[#ffffff] display-result'>
             {
                 defaultVal=== null ? '0':res
             }
