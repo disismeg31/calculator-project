@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-
+import { useState,useContext } from "react";
+import { themeContext } from "../context/ThemeProvider";
 function Header() {
+  const {theme,setTheme} = useContext(themeContext);
   const [toggleTheme, setToggleTheme] = useState({
     theme1: true,
     theme2: false,
@@ -15,6 +16,7 @@ function Header() {
       theme2: name === "theme2",
       theme3: name === "theme3",
     });
+    setTheme(name)
   };
 
   console.log(toggleTheme)

@@ -6,8 +6,15 @@ import calculatorStore from "./store/index.js";
 import ValueProvider from "./context/ValueProvider.jsx";
 import ThemeProvider from "./context/ThemeProvider.jsx";
 import Header from "./components/Header.jsx";
-
+import { themeContext } from "./context/ThemeProvider.jsx";
+import { useEffect,useContext } from "react";
 function App() {
+  const  {theme} = useContext(themeContext);
+  useEffect(()=>{
+    document.body.classList.remove('theme1', 'theme2', 'theme3');
+    document.body.classList.add(theme);
+  },[theme])
+
   return (
     <>
       <Provider store={calculatorStore}>

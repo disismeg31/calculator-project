@@ -19,10 +19,12 @@
     margin: 10px 0px;
 } */
 
-/* .display-result{
+.display-result-container{
     display: flex;
-    align-items: center;
-    height: 50px;
-    font-size: 50px;
-    color: #3aebb0;
-} */
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    color: #ffffff;
+    background-color: #182034;
+}

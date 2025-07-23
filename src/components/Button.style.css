@@ -17,7 +17,17 @@
     align-items: center;   
     justify-content: center;
 }
+.theme2 .span-num{
+    background-color:#e6e6e6 ;
+    color:#35352c;
+    box-shadow:#a69d91 0px 5px ;
+}
 
+.theme3 .span-num{
+    background-color: ;
+    color: ;
+    box-shadow: ;
+}
 .span-req{
     margin: 10px;
     height:70px;
@@ -34,6 +44,12 @@
     justify-content: center;
 }
 
+.theme2 .span-req{
+    background-color: #377f86;
+    color: #ffffff ;
+    box-shadow: #1b5f65 0px 5px;
+}
+
 .span-res{
     margin: 10px;
     height:70px;
@@ -48,6 +64,12 @@
     display: flex;
     align-items: center;   
     justify-content: center;
+}
+
+.theme2 .span-res{
+    background-color:#ca5502  ;
+    color:#ffffff ;
+    box-shadow:#893901 0px 5px ;
 }
  
  

@@ -1,11 +1,14 @@
 /* eslint-disable react/prop-types */
-import {createContext} from 'react'
+import {createContext,useState} from 'react'
 export const themeContext = createContext();
 
 function ThemeProvider({children}) {
 
-    const value ={
+   const [theme,setTheme] = useState('theme1');
 
+    const value ={
+      theme,
+      setTheme
     }
   return (
      <themeContext.Provider value={value}>
